@@ -13,6 +13,16 @@
       <e p="AutoTestRolePlay" t="IncludeRecursive">
         <e p="AutoTestRolePlay.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Exception" t="Include">
+          <e p="MessageException.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="ElementHelper.cs" t="Include" />
+          <e p="TextHelper.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="User.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">

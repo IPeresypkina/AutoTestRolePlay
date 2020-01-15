@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="" />
+    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="[feature] create project">
+      <change afterPath="$PROJECT_DIR$/AutoTestRolePlay/Exception/MessageException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoTestRolePlay/Helpers/ElementHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoTestRolePlay/Helpers/TextHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoTestRolePlay/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/AutoTestRolePlay.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/AutoTestRolePlay.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/AutoTestRolePlay.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/Debug/netcoreapp3.0/AutoTestRolePlay.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/Debug/netcoreapp3.0/AutoTestRolePlay.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/Debug/netcoreapp3.0/AutoTestRolePlay.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/Debug/netcoreapp3.0/AutoTestRolePlay.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/obj/project.packagespec.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +29,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1WS1oy8MTxTEEQr0RJ91fVnXdyf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,6 +58,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -49,8 +87,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579128360256</updated>
-      <workItem from="1579128362075" duration="254000" />
+      <workItem from="1579128362075" duration="1042000" />
     </task>
+    <task id="LOCAL-00001" summary="[feature] create project">
+      <created>1579129349341</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579129349341</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -58,7 +104,19 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[feature] create project" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] create project" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="568" y="350" key="Github.ShareDialog" timestamp="1579129634104">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="568" y="350" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1579129634104" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1579129366699">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1579129366699" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579129319857">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
