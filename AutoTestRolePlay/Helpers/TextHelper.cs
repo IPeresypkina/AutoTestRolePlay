@@ -1,6 +1,6 @@
 using System;
 
-namespace WebTest.Helpers
+namespace AutoTestRolePlay.Helpers
 {
     public class TextHelper
     {

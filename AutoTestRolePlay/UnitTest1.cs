@@ -5,7 +5,10 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Safari;
-
+using AutoTestRolePlay.Exception;
+using AutoTestRolePlay.Helpers;
+using AutoTestRolePlay.Models;
+using AutoTestRolePlay.Pages;
 
 namespace AutoTestRolePlay
 {
@@ -26,5 +29,33 @@ namespace AutoTestRolePlay
             driver.Quit();
         }
         
+        [Test]
+        public void FailedRegistration() //проверка валидации
+        {
+            RecordPage recordPage = new RecordPage(driver);
+            User user = User.GetRandomUser();
+            user.Firstname = "";
+            user.Mailing = true;
+            try
+            {
+                recordPage.Navigate().FillUser(user).Submit();
+            }
+            catch (MessageException e)
+            {
+                Assert.AreEqual("Firstname is empty",e.Message);
+            }
+
+            user.Firstname = TextHelper.GetRandomWord(10);
+            user.LastName = TextHelper.GetRandomWord(10);
+            user.Phone = "592900378596";
+            try
+            {
+                recordPage.Navigate().FillUser(user).Submit();
+            }
+            catch (MessageException e)
+            {
+                Assert.AreEqual("Phone is incorrect",e.Message);
+            }
+        }
     }
 }

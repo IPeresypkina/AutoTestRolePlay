@@ -1,4 +1,4 @@
-namespace WebTest.Exception
+namespace AutoTestRolePlay.Exception
 {
     public class MessageException: System.Exception
     {

@@ -1,8 +1,8 @@
 using System;
 using System.Threading;
-using WebTest.Helpers;
+using AutoTestRolePlay.Helpers;
 
-namespace WebTest.Models
+namespace AutoTestRolePlay.Models
 {
     public class User
     {

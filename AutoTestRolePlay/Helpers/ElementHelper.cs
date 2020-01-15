@@ -2,7 +2,7 @@ using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace WebTest.Helpers
+namespace AutoTestRolePlay.Helpers
 {
     public class ElementHelper
     {

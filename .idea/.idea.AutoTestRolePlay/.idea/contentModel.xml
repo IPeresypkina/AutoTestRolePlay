@@ -30,6 +30,16 @@
             </e>
           </e>
         </e>
+        <e p="Pages" t="Include">
+          <e p="FantasyPage.cs" t="Include" />
+          <e p="FooterComponent.cs" t="Include" />
+          <e p="HeaderComponent.cs" t="Include" />
+          <e p="IndexPage.cs" t="Include" />
+          <e p="IPage.cs" t="Include" />
+          <e p="ReсordPage.cs" t="Include" />
+          <e p="StalkerPage.cs" t="Include" />
+          <e p="WastelandPage.cs" t="Include" />
+        </e>
         <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="AutoTestRolePlay.sln" t="IncludeFlat" />
