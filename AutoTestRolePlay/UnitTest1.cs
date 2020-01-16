@@ -160,5 +160,14 @@ namespace AutoTestRolePlay
             Assert.True(fantasyPage.Navigate().ToTwitter());
             Assert.True(fantasyPage.Navigate().ToGoogle());
         }
+        [Test]
+        public void FooterFromWasteland()
+        {
+            WastelandPage wastelandPage = new WastelandPage(driver);
+            Assert.True(wastelandPage.Navigate().ToVk());
+            Assert.True(wastelandPage.Navigate().ToInstagram());
+            Assert.True(wastelandPage.Navigate().ToTwitter());
+            Assert.True(wastelandPage.Navigate().ToGoogle());
+        }
     }
 }
