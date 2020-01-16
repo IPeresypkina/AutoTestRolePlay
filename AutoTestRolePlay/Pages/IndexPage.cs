@@ -90,7 +90,7 @@ namespace AutoTestRolePlay.Pages
         public RecordPage SubmitRecord()
         {
             recordButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(RECORD), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(RECORD), TimeSpan.FromSeconds(1)))
             {
                 return new RecordPage(_driver);
             }
@@ -100,7 +100,7 @@ namespace AutoTestRolePlay.Pages
         public FantasyPage SubmitFantasy()
         {
             fantazyButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(FANTASY), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(FANTASY), TimeSpan.FromSeconds(1)))
             {
                 return new FantasyPage(_driver);
             }
@@ -110,7 +110,7 @@ namespace AutoTestRolePlay.Pages
         public WastelandPage SubmitWasteland()
         {
             wastelandButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(WASTELAND), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(WASTELAND), TimeSpan.FromSeconds(1)))
             {
                 return new WastelandPage(_driver);
             }
@@ -120,7 +120,7 @@ namespace AutoTestRolePlay.Pages
         public StalkerPage SubmitStalker()
         {
             stalkerButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(STALKER), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(STALKER), TimeSpan.FromSeconds(1)))
             {
                 return new StalkerPage(_driver);
             }
@@ -129,7 +129,7 @@ namespace AutoTestRolePlay.Pages
 
         public bool AreEqual()
         {
-            return ElementHelper.HasElement(_driver, By.ClassName(LOGO), TimeSpan.FromMilliseconds(50));
+            return ElementHelper.HasElement(_driver, By.ClassName(LOGO), TimeSpan.FromSeconds(1));
         }
     }
 }

@@ -56,7 +56,7 @@ namespace AutoTestRolePlay.Pages
 
         public bool AreEqual()
         {
-            return ElementHelper.HasElement(_driver, By.Id(WASTELAND), TimeSpan.FromMilliseconds(50));
+            return ElementHelper.HasElement(_driver, By.Id(WASTELAND), TimeSpan.FromSeconds(1));
         }
         public bool ToVk()
         {

@@ -126,14 +126,6 @@ namespace AutoTestRolePlay
             Assert.NotNull(indexPage.Navigate().SubmitStalker());
         }
         [Test]
-        public void CheckFantasy()
-        {
-            FantasyPage fantasyPage = new FantasyPage(driver);
-            Assert.NotNull(fantasyPage.Navigate().SubmitHistory());
-            Assert.NotNull(fantasyPage.Navigate().SubmitWorldview());
-            Assert.NotNull(fantasyPage.Navigate().SubmitNations());
-        }
-        [Test]
         public void CheckStalker()
         {
             StalkerPage stalkerPage = new StalkerPage(driver);
@@ -141,6 +133,14 @@ namespace AutoTestRolePlay
             Assert.NotNull(stalkerPage.Navigate().SubmitGroup());
             Assert.NotNull(stalkerPage.Navigate().SubmitAnomalies());
             Assert.NotNull(stalkerPage.Navigate().SubmitMutant());
+        }
+        [Test]
+        public void CheckFantasy()
+        {
+            FantasyPage fantasyPage = new FantasyPage(driver);
+            Assert.NotNull(fantasyPage.Navigate().SubmitHistory());
+            Assert.NotNull(fantasyPage.Navigate().SubmitWorldview());
+            Assert.NotNull(fantasyPage.Navigate().SubmitNations());
         }
         [Test]
         public void FooterFromIndex()

@@ -70,7 +70,7 @@ namespace AutoTestRolePlay.Pages
         public FantasyPage SubmitHistory()
         {
             historyButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(HISTORY), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(HISTORY), TimeSpan.FromSeconds(1)))
             {
                 return new FantasyPage(_driver);
             }
@@ -79,7 +79,7 @@ namespace AutoTestRolePlay.Pages
         public FantasyPage SubmitWorldview()
         {
             worldviewButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(WORLDVIEW), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(WORLDVIEW), TimeSpan.FromSeconds(1)))
             {
                 return new FantasyPage(_driver);
             }
@@ -88,7 +88,7 @@ namespace AutoTestRolePlay.Pages
         public FantasyPage SubmitNations()
         {
             nationsButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(NATIONS), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(NATIONS), TimeSpan.FromSeconds(1)))
             {
                 return new FantasyPage(_driver);
             }
@@ -97,7 +97,7 @@ namespace AutoTestRolePlay.Pages
 
         public bool AreEqual()
         {
-            return ElementHelper.HasElement(_driver, By.Id(FANTASY), TimeSpan.FromMilliseconds(50));
+            return ElementHelper.HasElement(_driver, By.Id(FANTASY), TimeSpan.FromSeconds(1));
         }   
         public bool ToVk()
         {

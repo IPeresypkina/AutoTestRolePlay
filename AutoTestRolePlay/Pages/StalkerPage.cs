@@ -74,7 +74,7 @@ namespace AutoTestRolePlay.Pages
         public StalkerPage SubmitHistory()
         {
             historyButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(HISTORY), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(HISTORY), TimeSpan.FromSeconds(1)))
             {
                 return new StalkerPage(_driver);
             }
@@ -84,7 +84,7 @@ namespace AutoTestRolePlay.Pages
         public StalkerPage SubmitGroup()
         {
             groupButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(GROUP), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(GROUP), TimeSpan.FromSeconds(1)))
             {
                 return new StalkerPage(_driver);
             }
@@ -93,7 +93,7 @@ namespace AutoTestRolePlay.Pages
         public StalkerPage SubmitAnomalies()
         {
             anomaliesButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(ANOMALIES), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(ANOMALIES), TimeSpan.FromSeconds(1)))
             {
                 return new StalkerPage(_driver);
             }
@@ -102,7 +102,7 @@ namespace AutoTestRolePlay.Pages
         public StalkerPage SubmitMutant()
         {
             mutantButton.Click();
-            if (ElementHelper.HasElement(_driver, By.Id(MUTANT), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(MUTANT), TimeSpan.FromSeconds(1)))
             {
                 return new StalkerPage(_driver);
             }
@@ -128,7 +128,7 @@ namespace AutoTestRolePlay.Pages
 
         public bool AreEqual()
         {
-            return ElementHelper.HasElement(_driver, By.Id(STALKER), TimeSpan.FromMilliseconds(50));
+            return ElementHelper.HasElement(_driver, By.Id(STALKER), TimeSpan.FromSeconds(2));
         }   
     }
 }

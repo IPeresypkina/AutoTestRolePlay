@@ -27,7 +27,7 @@ namespace AutoTestRolePlay.Pages
         private static readonly string VK_FOOTER = "page_name";
         private static readonly string INSTAGRAM_FOOTER = "nZSzR";
         private static readonly string TWITTER_FOOTER = "page_name";
-        private static readonly string GOOGLE_FOOTER = "Y4dIwd";
+        private static readonly string GOOGLE_FOOTER = "h-c-header__product-logo-text";
         
         public FooterComponent(IWebDriver _driver)
         {
@@ -38,7 +38,7 @@ namespace AutoTestRolePlay.Pages
         public bool ToVk()
         {
             vkButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(VK_FOOTER), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(driver, By.ClassName(VK_FOOTER), TimeSpan.FromSeconds(1)))
             {
                 return true;
             }
@@ -47,7 +47,7 @@ namespace AutoTestRolePlay.Pages
         public bool ToInstagram()
         {
             instagramButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(INSTAGRAM_FOOTER), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(driver, By.ClassName(INSTAGRAM_FOOTER), TimeSpan.FromSeconds(1)))
             {
                 return true;
             }
@@ -56,7 +56,7 @@ namespace AutoTestRolePlay.Pages
         public bool ToTwitter()
         {
             twitterButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(TWITTER_FOOTER), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(driver, By.ClassName(TWITTER_FOOTER), TimeSpan.FromSeconds(1)))
             {
                 return true;
             }
@@ -65,7 +65,7 @@ namespace AutoTestRolePlay.Pages
         public bool ToGoogle()
         {
             googleButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(GOOGLE_FOOTER), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(driver, By.ClassName(GOOGLE_FOOTER), TimeSpan.FromSeconds(1)))
             {
                 return true;
             }

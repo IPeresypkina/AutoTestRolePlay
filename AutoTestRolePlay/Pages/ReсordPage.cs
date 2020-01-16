@@ -187,7 +187,7 @@ namespace AutoTestRolePlay.Pages
                 throw new MessageException("Mailing is empty");
             }
             
-            if (ElementHelper.HasElement(_driver, By.Id(SBERBANK), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(_driver, By.Id(SBERBANK), TimeSpan.FromSeconds(1)))
             {
                 return new RecordPage(_driver);
             }
@@ -212,7 +212,7 @@ namespace AutoTestRolePlay.Pages
         }
         public bool AreEqual()
         {
-            return ElementHelper.HasElement(_driver, By.Id(SUBMITBUTTON), TimeSpan.FromMilliseconds(50));
+            return ElementHelper.HasElement(_driver, By.Id(SUBMITBUTTON), TimeSpan.FromSeconds(1));
         }   
     }
 }

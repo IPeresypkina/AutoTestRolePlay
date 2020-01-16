@@ -41,7 +41,7 @@ namespace AutoTestRolePlay.Pages
         public IndexPage ToIndex()
         {
             indexButton.Click();
-            if (ElementHelper.HasElement(driver, By.Id(INDEX_HEADER), TimeSpan.FromMilliseconds(50)))
+            if (ElementHelper.HasElement(driver, By.Id(INDEX_HEADER), TimeSpan.FromSeconds(1)))
             {
                 return new IndexPage(driver);
             }
