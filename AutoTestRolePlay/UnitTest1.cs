@@ -86,5 +86,15 @@ namespace AutoTestRolePlay
             Assert.True(indexPage.Navigate().ToStalker().AreEqual());
             Assert.True(indexPage.Navigate().ToRecord().AreEqual());
         }
+        [Test]
+        public void HeaderFromFantasy()//проверка header со страницы Fantasy
+        {
+            FantasyPage fantasyPage = new FantasyPage(driver);
+            Assert.True(fantasyPage.Navigate().ToIndex().AreEqual());
+            Assert.True(fantasyPage.Navigate().ToFantasy().AreEqual());
+            Assert.True(fantasyPage.Navigate().ToWasteland().AreEqual());
+            Assert.True(fantasyPage.Navigate().ToStalker().AreEqual());
+            Assert.True(fantasyPage.Navigate().ToRecord().AreEqual());
+        }
     }
 }
