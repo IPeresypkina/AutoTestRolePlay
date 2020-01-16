@@ -142,5 +142,14 @@ namespace AutoTestRolePlay
             Assert.NotNull(stalkerPage.Navigate().SubmitAnomalies());
             Assert.NotNull(stalkerPage.Navigate().SubmitMutant());
         }
+        [Test]
+        public void FooterFromIndex()
+        {
+            IndexPage indexPage = new IndexPage(driver);
+            Assert.True(indexPage.Navigate().ToVk());
+            Assert.True(indexPage.Navigate().ToInstagram());
+            Assert.True(indexPage.Navigate().ToTwitter());
+            Assert.True(indexPage.Navigate().ToGoogle());
+        }
     }
 }
