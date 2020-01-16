@@ -116,5 +116,14 @@ namespace AutoTestRolePlay
             Assert.True(stalkerPage.Navigate().ToStalker().AreEqual());
             Assert.True(stalkerPage.Navigate().ToRecord().AreEqual());
         }
+        [Test]
+        public void CheckIndex()
+        {
+            IndexPage indexPage = new IndexPage(driver);
+            Assert.NotNull(indexPage.Navigate().SubmitRecord());
+            Assert.NotNull(indexPage.Navigate().SubmitFantasy());
+            Assert.NotNull(indexPage.Navigate().SubmitWasteland());
+            Assert.NotNull(indexPage.Navigate().SubmitStalker());
+        }
     }
 }

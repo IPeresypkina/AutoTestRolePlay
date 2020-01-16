@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="[feature] test success registration">
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" afterDir="false" />
-    </list>
+    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="[feature] test header from stalker" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579128360256</updated>
       <workItem from="1579128362075" duration="2069000" />
-      <workItem from="1579158855395" duration="778000" />
+      <workItem from="1579158855395" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] create project">
       <created>1579129349341</created>
@@ -127,7 +125,42 @@
       <option name="project" value="LOCAL" />
       <updated>1579160187351</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[feature] test header from record">
+      <created>1579160325498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579160325498</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[feature] test header from index">
+      <created>1579160382134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579160382134</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[feature] test header from fantasy">
+      <created>1579160431777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579160431777</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[feature] test header from wasteland">
+      <created>1579160491028</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579160491028</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[feature] test header from stalker">
+      <created>1579160554868</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1579160554868</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +184,12 @@
     <MESSAGE value="[feature] test ChromeDriver" />
     <MESSAGE value="[feature] test Failed registration" />
     <MESSAGE value="[feature] test success registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] test success registration" />
+    <MESSAGE value="[feature] test header from record" />
+    <MESSAGE value="[feature] test header from index" />
+    <MESSAGE value="[feature] test header from fantasy" />
+    <MESSAGE value="[feature] test header from wasteland" />
+    <MESSAGE value="[feature] test header from stalker" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] test header from stalker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="350" key="Github.ShareDialog" timestamp="1579129634104">
