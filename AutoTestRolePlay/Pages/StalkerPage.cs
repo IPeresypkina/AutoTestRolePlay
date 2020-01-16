@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestPlatform.Common.Utilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -29,11 +30,12 @@ namespace AutoTestRolePlay.Pages
         private IWebElement mutantButton;
         
         private static readonly string HISTORY = "history";
-        private static readonly string GROUP = "group";
+        private static readonly string GROUP = "groupings";
         private static readonly string ANOMALIES = "anomalies";
         private static readonly string MUTANT = "mutants";
         //для проверки
         private static readonly string STALKER = "stalkerWorld";
+        private static readonly string CHECK = "checkPage";
         
         
         public StalkerPage(IWebDriver driver)
@@ -47,9 +49,10 @@ namespace AutoTestRolePlay.Pages
         public StalkerPage Navigate()
         {
             _driver.Navigate().GoToUrl(_url);
+            
             return this;
         }
-        
+
         public IndexPage ToIndex()
         {
             return header.ToIndex();
@@ -109,19 +112,19 @@ namespace AutoTestRolePlay.Pages
             return null;
         }
         
-        public bool ToVk()
+        public string ToVk()
         {
             return footer.ToVk();
         }
-        public bool ToTwitter()
+        public string ToTwitter()
         {
             return footer.ToTwitter();
         }
-        public bool ToInstagram()
+        public string ToInstagram()
         {
             return footer.ToInstagram();
         }
-        public bool ToGoogle()
+        public string ToGoogle()
         {
             return footer.ToGoogle();
         }

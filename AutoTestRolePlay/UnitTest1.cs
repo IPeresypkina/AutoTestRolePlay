@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Safari;
 using AutoTestRolePlay.Exception;
 using AutoTestRolePlay.Helpers;
@@ -28,7 +29,7 @@ namespace AutoTestRolePlay
         {
             driver.Quit();
         }
-        
+
         [Test]
         public void FailedRegistration() //проверка валидации
         {
@@ -146,46 +147,46 @@ namespace AutoTestRolePlay
         public void FooterFromIndex()
         {
             IndexPage indexPage = new IndexPage(driver);
-            Assert.True(indexPage.Navigate().ToVk());
-            Assert.True(indexPage.Navigate().ToInstagram());
-            Assert.True(indexPage.Navigate().ToTwitter());
-            Assert.True(indexPage.Navigate().ToGoogle());
+            Assert.AreEqual(indexPage.Navigate().ToVk(), "Ирина Пересыпкина | ВКонтакте");
+            Assert.AreEqual(indexPage.Navigate().ToInstagram(), "Irina Peresypkina (@_iracult) • Фото и видео в Instagram");
+            Assert.AreEqual(indexPage.Navigate().ToTwitter(), "manaton (@irinka213) | Твиттер");
+            Assert.AreEqual(indexPage.Navigate().ToGoogle(), "Gmail – электронная почта и бесплатное хранилище от Google");
         }
         [Test]
         public void FooterFromFantasy()
         {
             FantasyPage fantasyPage = new FantasyPage(driver);
-            Assert.True(fantasyPage.Navigate().ToVk());
-            Assert.True(fantasyPage.Navigate().ToInstagram());
-            Assert.True(fantasyPage.Navigate().ToTwitter());
-            Assert.True(fantasyPage.Navigate().ToGoogle());
+            Assert.AreEqual(fantasyPage.Navigate().ToVk(), "Ирина Пересыпкина | ВКонтакте");
+            Assert.AreEqual(fantasyPage.Navigate().ToInstagram(), "Irina Peresypkina (@_iracult) • Фото и видео в Instagram");
+            Assert.AreEqual(fantasyPage.Navigate().ToTwitter(), "manaton (@irinka213) | Твиттер");
+            Assert.AreEqual(fantasyPage.Navigate().ToGoogle(), "Gmail – электронная почта и бесплатное хранилище от Google");
         }
         [Test]
         public void FooterFromWasteland()
         {
             WastelandPage wastelandPage = new WastelandPage(driver);
-            Assert.True(wastelandPage.Navigate().ToVk());
-            Assert.True(wastelandPage.Navigate().ToInstagram());
-            Assert.True(wastelandPage.Navigate().ToTwitter());
-            Assert.True(wastelandPage.Navigate().ToGoogle());
+            Assert.AreEqual(wastelandPage.Navigate().ToVk(), "Ирина Пересыпкина | ВКонтакте");
+            Assert.AreEqual(wastelandPage.Navigate().ToInstagram(), "Irina Peresypkina (@_iracult) • Фото и видео в Instagram");
+            Assert.AreEqual(wastelandPage.Navigate().ToTwitter(), "manaton (@irinka213) | Твиттер");
+            Assert.AreEqual(wastelandPage.Navigate().ToGoogle(), "Gmail – электронная почта и бесплатное хранилище от Google");
         }
         [Test]
         public void FooterFromStalker()
         {
             StalkerPage stalkerPage = new StalkerPage(driver);
-            Assert.True(stalkerPage.Navigate().ToVk());
-            Assert.True(stalkerPage.Navigate().ToInstagram());
-            Assert.True(stalkerPage.Navigate().ToTwitter());
-            Assert.True(stalkerPage.Navigate().ToGoogle());
+            Assert.AreEqual(stalkerPage.Navigate().ToVk(), "Ирина Пересыпкина | ВКонтакте");
+            Assert.AreEqual(stalkerPage.Navigate().ToInstagram(), "Irina Peresypkina (@_iracult) • Фото и видео в Instagram");
+            Assert.AreEqual(stalkerPage.Navigate().ToTwitter(), "manaton (@irinka213) | Твиттер");
+            Assert.AreEqual(stalkerPage.Navigate().ToGoogle(), "Gmail – электронная почта и бесплатное хранилище от Google");
         }
         [Test]
         public void FooterFromRecord()
         {
             RecordPage recordPage = new RecordPage(driver);
-            Assert.True(recordPage.Navigate().ToVk());
-            Assert.True(recordPage.Navigate().ToInstagram());
-            Assert.True(recordPage.Navigate().ToTwitter());
-            Assert.True(recordPage.Navigate().ToGoogle());
+            Assert.AreEqual(recordPage.Navigate().ToVk(), "Ирина Пересыпкина | ВКонтакте");
+            Assert.AreEqual(recordPage.Navigate().ToInstagram(), "Irina Peresypkina (@_iracult) • Фото и видео в Instagram");
+            Assert.AreEqual(recordPage.Navigate().ToTwitter(), "manaton (@irinka213) | Твиттер");
+            Assert.AreEqual(recordPage.Navigate().ToGoogle(), "Gmail – электронная почта и бесплатное хранилище от Google");
         }
     }
 }

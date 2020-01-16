@@ -46,7 +46,6 @@ namespace AutoTestRolePlay.Pages
         [FindsBy(How = How.Id, Using = "buy")] 
         private IWebElement submitButton;
         
-        //здесь будет дата
         
         private static readonly string FIRSTNAME_EMPTY = "firstnameEmpty";
         private static readonly string FIRSTNAME_MORE_CHARACTER = "firstnameMoreCharacters";
@@ -119,7 +118,6 @@ namespace AutoTestRolePlay.Pages
                 IWebElement testClick = _driver.FindElement(By.Id("mailing"));
                 testClick.Click();
             }
-                
             mailingRadio.Selected.Equals("checked");
             return this;
         }
@@ -194,19 +192,19 @@ namespace AutoTestRolePlay.Pages
 
             return null;
         }
-        public bool ToVk()
+        public string ToVk()
         {
             return footer.ToVk();
         }
-        public bool ToTwitter()
+        public string ToTwitter()
         {
             return footer.ToTwitter();
         }
-        public bool ToInstagram()
+        public string ToInstagram()
         {
             return footer.ToInstagram();
         }
-        public bool ToGoogle()
+        public string ToGoogle()
         {
             return footer.ToGoogle();
         }

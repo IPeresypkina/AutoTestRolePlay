@@ -70,19 +70,19 @@ namespace AutoTestRolePlay.Pages
             return header.ToRecord();
         }
 
-        public bool ToVk()
+        public string ToVk()
         {
             return footer.ToVk();
         }
-        public bool ToTwitter()
+        public string ToTwitter()
         {
             return footer.ToTwitter();
         }
-        public bool ToInstagram()
+        public string ToInstagram()
         {
             return footer.ToInstagram();
         }
-        public bool ToGoogle()
+        public string ToGoogle()
         {
             return footer.ToGoogle();
         }

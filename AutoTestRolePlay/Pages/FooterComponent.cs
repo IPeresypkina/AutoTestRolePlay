@@ -24,10 +24,10 @@ namespace AutoTestRolePlay.Pages
         [FindsBy(How = How.ClassName, Using = "google")] 
         private IWebElement googleButton;
         
-        private static readonly string VK_FOOTER = "page_name";
-        private static readonly string INSTAGRAM_FOOTER = "nZSzR";
-        private static readonly string TWITTER_FOOTER = "page_name";
-        private static readonly string GOOGLE_FOOTER = "h-c-header__product-logo-text";
+        private static readonly string VK_FOOTER = "/html/body/div[9]/div/div/div[1]/div[2]/div/div/div[1]/div[1]";
+        private static readonly string INSTAGRAM_FOOTER = "/html/body/div[1]/section/nav/div[2]/div/div/div[1]";
+        private static readonly string TWITTER_FOOTER = "/html/body/div[2]/div[1]/div/div/div/ul";
+        private static readonly string GOOGLE_FOOTER = "/html/body/div[1]/div[1]/div[2]";
         
         public FooterComponent(IWebDriver _driver)
         {
@@ -35,41 +35,41 @@ namespace AutoTestRolePlay.Pages
             PageFactory.InitElements(driver,this);
         }
         
-        public bool ToVk()
+        public string ToVk()
         {
             vkButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(VK_FOOTER), TimeSpan.FromSeconds(1)))
+            if (ElementHelper.HasElement(driver, By.XPath(VK_FOOTER), TimeSpan.FromSeconds(1)))
             {
-                return true;
+                return driver.Title;
             }
-            return false;
+            return "dashboard";
         }
-        public bool ToInstagram()
+        public string ToInstagram()
         {
             instagramButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(INSTAGRAM_FOOTER), TimeSpan.FromSeconds(1)))
+            if (ElementHelper.HasElement(driver, By.XPath(INSTAGRAM_FOOTER), TimeSpan.FromSeconds(1)))
             {
-                return true;
+                return driver.Title;
             }
-            return false;
+            return "dashboard";
         }
-        public bool ToTwitter()
+        public string ToTwitter()
         {
             twitterButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(TWITTER_FOOTER), TimeSpan.FromSeconds(1)))
+            if (ElementHelper.HasElement(driver, By.XPath(TWITTER_FOOTER), TimeSpan.FromSeconds(1)))
             {
-                return true;
+                return driver.Title;
             }
-            return false;
+            return "dashboard";
         }
-        public bool ToGoogle()
+        public string ToGoogle()
         {
             googleButton.Click();
-            if (ElementHelper.HasElement(driver, By.ClassName(GOOGLE_FOOTER), TimeSpan.FromSeconds(1)))
+            if (ElementHelper.HasElement(driver, By.XPath(GOOGLE_FOOTER), TimeSpan.FromSeconds(1)))
             {
-                return true;
+                return driver.Title;
             }
-            return false;
+            return "dashboard";
         }
     }
 }
