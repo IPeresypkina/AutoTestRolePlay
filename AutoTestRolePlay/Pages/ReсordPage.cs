@@ -13,6 +13,7 @@ namespace AutoTestRolePlay.Pages
     {
         private readonly IWebDriver _driver;
         private HeaderComponent header;
+        private FooterComponent footer;
         private readonly string _url = @"http://127.0.0.1:8080/record";
         
         [FindsBy(How = How.Id, Using = "firstname")] 
@@ -70,6 +71,7 @@ namespace AutoTestRolePlay.Pages
             _driver = driver;
             PageFactory.InitElements(driver,this);
             header = new HeaderComponent(driver);
+            footer = new FooterComponent(driver);
         }
         
         public IndexPage ToIndex()
@@ -192,13 +194,22 @@ namespace AutoTestRolePlay.Pages
 
             return null;
         }
-        
-        
-        public string GetPageName()
+        public bool ToVk()
         {
-            return "Запись";
+            return footer.ToVk();
         }
-
+        public bool ToTwitter()
+        {
+            return footer.ToTwitter();
+        }
+        public bool ToInstagram()
+        {
+            return footer.ToInstagram();
+        }
+        public bool ToGoogle()
+        {
+            return footer.ToGoogle();
+        }
         public bool AreEqual()
         {
             return ElementHelper.HasElement(_driver, By.Id(SUBMITBUTTON), TimeSpan.FromMilliseconds(50));
