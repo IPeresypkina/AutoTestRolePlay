@@ -125,5 +125,13 @@ namespace AutoTestRolePlay
             Assert.NotNull(indexPage.Navigate().SubmitWasteland());
             Assert.NotNull(indexPage.Navigate().SubmitStalker());
         }
+        [Test]
+        public void CheckFantasy()
+        {
+            FantasyPage fantasyPage = new FantasyPage(driver);
+            Assert.NotNull(fantasyPage.Navigate().SubmitHistory());
+            Assert.NotNull(fantasyPage.Navigate().SubmitWorldview());
+            Assert.NotNull(fantasyPage.Navigate().SubmitNations());
+        }
     }
 }
