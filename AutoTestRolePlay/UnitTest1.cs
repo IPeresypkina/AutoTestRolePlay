@@ -57,5 +57,14 @@ namespace AutoTestRolePlay
                 Assert.AreEqual("Phone is incorrect",e.Message);
             }
         }
+        
+        [Test]
+        public void SuccessRegistration()//положительный тест
+        {
+            RecordPage recordPage = new RecordPage(driver);
+            User user = User.GetRandomUser();
+            recordPage.Navigate().FillUser(user).Submit();
+            Assert.True(recordPage.Navigate().AreEqual());
+        }
     }
 }
