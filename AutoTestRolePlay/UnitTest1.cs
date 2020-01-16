@@ -96,5 +96,15 @@ namespace AutoTestRolePlay
             Assert.True(fantasyPage.Navigate().ToStalker().AreEqual());
             Assert.True(fantasyPage.Navigate().ToRecord().AreEqual());
         }
+        [Test]
+        public void HeaderFromWasteland()//проверка header со страницы Wasteland
+        {
+            WastelandPage wastelandPage = new WastelandPage(driver);
+            Assert.True(wastelandPage.Navigate().ToIndex().AreEqual());
+            Assert.True(wastelandPage.Navigate().ToFantasy().AreEqual());
+            Assert.True(wastelandPage.Navigate().ToWasteland().AreEqual());
+            Assert.True(wastelandPage.Navigate().ToStalker().AreEqual());
+            Assert.True(wastelandPage.Navigate().ToRecord().AreEqual());
+        }
     }
 }
