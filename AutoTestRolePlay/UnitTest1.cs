@@ -117,15 +117,6 @@ namespace AutoTestRolePlay
             Assert.True(stalkerPage.Navigate().ToRecord().AreEqual());
         }
         [Test]
-        public void CheckIndex()
-        {
-            IndexPage indexPage = new IndexPage(driver);
-            Assert.NotNull(indexPage.Navigate().SubmitRecord());
-            Assert.NotNull(indexPage.Navigate().SubmitFantasy());
-            Assert.NotNull(indexPage.Navigate().SubmitWasteland());
-            Assert.NotNull(indexPage.Navigate().SubmitStalker());
-        }
-        [Test]
         public void CheckStalker()
         {
             StalkerPage stalkerPage = new StalkerPage(driver);
@@ -133,6 +124,15 @@ namespace AutoTestRolePlay
             Assert.NotNull(stalkerPage.Navigate().SubmitGroup());
             Assert.NotNull(stalkerPage.Navigate().SubmitAnomalies());
             Assert.NotNull(stalkerPage.Navigate().SubmitMutant());
+        }
+        [Test]
+        public void CheckIndex()
+        {
+            IndexPage indexPage = new IndexPage(driver);
+            Assert.NotNull(indexPage.Navigate().SubmitRecord());
+            Assert.NotNull(indexPage.Navigate().SubmitFantasy());
+            Assert.NotNull(indexPage.Navigate().SubmitWasteland());
+            Assert.NotNull(indexPage.Navigate().SubmitStalker());
         }
         [Test]
         public void CheckFantasy()

@@ -28,10 +28,10 @@ namespace AutoTestRolePlay.Pages
         [FindsBy(How = How.Id, Using = "mutantsS")] 
         private IWebElement mutantButton;
         
-        private static readonly string HISTORY = "History";
-        private static readonly string GROUP = "Groupings";
-        private static readonly string ANOMALIES = "Anomalies";
-        private static readonly string MUTANT = "Mutants";
+        private static readonly string HISTORY = "history";
+        private static readonly string GROUP = "group";
+        private static readonly string ANOMALIES = "anomalies";
+        private static readonly string MUTANT = "mutants";
         //для проверки
         private static readonly string STALKER = "stalkerWorld";
         

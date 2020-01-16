@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="[feature] test footer from record">
+    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="[fix] change timeSpan">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutoTestRolePlay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/FantasyPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/FantasyPage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/FooterComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/FooterComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/HeaderComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/HeaderComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/IndexPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/IndexPage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/ReсordPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/ReсordPage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/WastelandPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/WastelandPage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +50,8 @@
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/HeaderComponent.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/FantasyPage.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/FooterComponent.cs" />
-        <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579128360256</updated>
       <workItem from="1579128362075" duration="2069000" />
-      <workItem from="1579158855395" duration="6956000" />
+      <workItem from="1579158855395" duration="8770000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] create project">
       <created>1579129349341</created>
@@ -233,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579161436113</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[fix] change timeSpan">
+      <created>1579167382665</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1579167382665</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +270,8 @@
     <MESSAGE value="[feature] test footer from wasteland" />
     <MESSAGE value="[feature] test footer from stalker" />
     <MESSAGE value="[feature] test footer from record" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] test footer from record" />
+    <MESSAGE value="[fix] change timeSpan" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] change timeSpan" />
   </component>
   <component name="WindowStateProjectService">
     <state width="474" height="452" key="DebuggerActiveHint" timestamp="1579166730852">
@@ -373,32 +374,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="196" key="GridCell.Tab.4.right/0.0.1440.900@0.0.1440.900" timestamp="1579166968869" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1579161469687">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1579167390067">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1579161469687" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1579167390067" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579129319857">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1579129319857" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs</url>
-          <line>131</line>
-          <properties documentPath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" initialLine="131">
-            <startOffsets>
-              <option value="5299" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5354" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
