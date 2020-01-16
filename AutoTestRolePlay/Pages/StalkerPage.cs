@@ -13,6 +13,7 @@ namespace AutoTestRolePlay.Pages
     {
         private readonly IWebDriver _driver;
         private HeaderComponent header;
+        private FooterComponent footer;
         private readonly string _url = @"http://127.0.0.1:8080/stalker";
         
         [FindsBy(How = How.Id, Using = "historyS")] 
@@ -40,6 +41,7 @@ namespace AutoTestRolePlay.Pages
             _driver = driver;
             PageFactory.InitElements(driver,this);
             header = new HeaderComponent(driver);
+            footer = new FooterComponent(driver);
         }
         
         public StalkerPage Navigate()
@@ -105,6 +107,23 @@ namespace AutoTestRolePlay.Pages
                 return new StalkerPage(_driver);
             }
             return null;
+        }
+        
+        public bool ToVk()
+        {
+            return footer.ToVk();
+        }
+        public bool ToTwitter()
+        {
+            return footer.ToTwitter();
+        }
+        public bool ToInstagram()
+        {
+            return footer.ToInstagram();
+        }
+        public bool ToGoogle()
+        {
+            return footer.ToGoogle();
         }
 
         public bool AreEqual()

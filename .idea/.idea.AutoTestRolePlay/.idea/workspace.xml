@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="[feature] test footer from index">
-      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/FantasyPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/FantasyPage.cs" afterDir="false" />
+    <list default="true" id="1bc34af7-844a-4e7f-8024-ef0960651015" name="Default Changelist" comment="[feature] test footer from wasteland">
+      <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,13 +38,13 @@
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Models/User.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/ReсordPage.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/IPage.cs" />
-        <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" />
-        <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/WastelandPage.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/IndexPage.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/HeaderComponent.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/FooterComponent.cs" />
+        <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/WastelandPage.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/FantasyPage.cs" />
+        <option value="$PROJECT_DIR$/AutoTestRolePlay/Pages/StalkerPage.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579128360256</updated>
       <workItem from="1579128362075" duration="2069000" />
-      <workItem from="1579158855395" duration="1407000" />
+      <workItem from="1579158855395" duration="1730000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] create project">
       <created>1579129349341</created>
@@ -191,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579160812930</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[feature] test footer from fantasy">
+      <created>1579160960270</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1579160960270</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[feature] test footer from wasteland">
+      <created>1579161132378</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1579161132378</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +238,9 @@
     <MESSAGE value="[feature] test fantasy" />
     <MESSAGE value="[feature] test stalker" />
     <MESSAGE value="[feature] test footer from index" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] test footer from index" />
+    <MESSAGE value="[feature] test footer from fantasy" />
+    <MESSAGE value="[feature] test footer from wasteland" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] test footer from wasteland" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="350" key="Github.ShareDialog" timestamp="1579129634104">
