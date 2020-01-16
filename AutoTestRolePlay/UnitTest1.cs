@@ -151,5 +151,14 @@ namespace AutoTestRolePlay
             Assert.True(indexPage.Navigate().ToTwitter());
             Assert.True(indexPage.Navigate().ToGoogle());
         }
+        [Test]
+        public void FooterFromFantasy()
+        {
+            FantasyPage fantasyPage = new FantasyPage(driver);
+            Assert.True(fantasyPage.Navigate().ToVk());
+            Assert.True(fantasyPage.Navigate().ToInstagram());
+            Assert.True(fantasyPage.Navigate().ToTwitter());
+            Assert.True(fantasyPage.Navigate().ToGoogle());
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace AutoTestRolePlay.Pages
     {
         private readonly IWebDriver _driver;
         private HeaderComponent header;
+        private FooterComponent footer;
         private readonly string _url = @"http://127.0.0.1:8080/fantasy";
         
         [FindsBy(How = How.Id, Using = "historyF")] 
@@ -36,6 +37,7 @@ namespace AutoTestRolePlay.Pages
             _driver = driver;
             PageFactory.InitElements(driver,this);
             header = new HeaderComponent(driver);
+            footer = new FooterComponent(driver);
         }
         
         public FantasyPage Navigate()
@@ -97,5 +99,21 @@ namespace AutoTestRolePlay.Pages
         {
             return ElementHelper.HasElement(_driver, By.Id(FANTASY), TimeSpan.FromMilliseconds(50));
         }   
+        public bool ToVk()
+        {
+            return footer.ToVk();
+        }
+        public bool ToTwitter()
+        {
+            return footer.ToTwitter();
+        }
+        public bool ToInstagram()
+        {
+            return footer.ToInstagram();
+        }
+        public bool ToGoogle()
+        {
+            return footer.ToGoogle();
+        }
     }
 }
