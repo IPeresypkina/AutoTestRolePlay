@@ -66,5 +66,15 @@ namespace AutoTestRolePlay
             recordPage.Navigate().FillUser(user).Submit();
             Assert.True(recordPage.Navigate().AreEqual());
         }
+        [Test]
+        public void HeaderFromRecord()//проверка header со страницы Record
+        {
+            RecordPage recordPage = new RecordPage(driver);
+            Assert.True(recordPage.Navigate().ToIndex().AreEqual());
+            Assert.True(recordPage.Navigate().ToFantasy().AreEqual());
+            Assert.True(recordPage.Navigate().ToWasteland().AreEqual());
+            Assert.True(recordPage.Navigate().ToStalker().AreEqual());
+            Assert.True(recordPage.Navigate().ToRecord().AreEqual());
+        }
     }
 }
